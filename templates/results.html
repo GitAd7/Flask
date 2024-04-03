@@ -2,7 +2,13 @@
 <h2>You Can See the Final Results Here</h2>
 
 <body>
-    The Final Reusls are as follows: {{result}}. 
-    Please Visit Again. Thank You!
+<table border=2>
+{% for key,value in result.items() %}
+    <tr>
+        <th>{{ key }}</th>
+        <th>{{ value }}</th>
+    </tr>
+{% endfor %}
+</table>
 </body>
 </html>
